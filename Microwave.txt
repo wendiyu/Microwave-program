@@ -1,0 +1,62 @@
+#
+#Created by: Wendi Yu
+#Created on: Feb-08-2019
+#
+#This program tells the user the time that Microwave need to heat a sub, pizza or soup according to the portions they choose
+
+#property
+
+time = 0
+subTime = 1
+pizzaTime = 0.75
+soupTime = 1.75
+
+food = input("Are you heating a sub, pizza, or soup? Food = ")
+
+if (food == "sub" or food == "pizza" or food == "soup" ):
+
+  portion = float(input("How many " + food + " are you heating? Portion = "))
+
+  if (food == "sub" and portion == 1):
+    time = subTime *1
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "pizza" and portion == 1):
+    time = pizzaTime *1
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "soup" and portion == 1):
+    time = soupTime *1
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "sub" and portion == 2):
+    time = subTime *1.5
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "pizza" and portion == 2):
+    time = pizzaTime *1.5
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "soup" and portion == 2):
+    time = soupTime *1.5
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "sub" and portion == 3):
+    time = subTime *2
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "pizza" and portion == 3):
+    time = pizzaTime *2
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "soup" and portion == 3):
+    time = soupTime *2
+    print("The total time is " + str(time) + " minutes")  
+  else:
+    print("Invalid input! You only can heat 3 items one at a time.")
+else:
+  print("Invalid input! Please, enter one of options above.(sub, pizza, or soup) ")
+
+input()
+    print("The total time is " + str(time) + " minutes")
+  elif (food == "sub" and portion == 3):
+    time = soupTime *2
+    print("The total time is " + str(time) + " minutes")
+  else:
+    print("Invaild input! You only can heat 3 items one at a time.")
+else:
+  print("Invaild input! Please, enter one of options above. ")
+
+input()
