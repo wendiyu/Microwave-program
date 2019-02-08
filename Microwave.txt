@@ -55,7 +55,7 @@ input()
     time = soupTime *2
     print("The total time is " + str(time) + " minutes")
   else:
-    print("Invaild input! You only can heat 3 items one at a time.")
+    print("Invaild input! You only can heat 3 items at one time.")
 else:
   print("Invaild input! Please, enter one of options above. ")
 
